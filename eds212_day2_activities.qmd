@@ -47,5 +47,6 @@ ggplot() +
                   color = species)) +
   labs(title = "Penguin flipper length by species",
        x = "Species",
-       y = "Flipper length (mm)")
+       y = "Flipper length (mm)",
+       color = "Species")
 ```
