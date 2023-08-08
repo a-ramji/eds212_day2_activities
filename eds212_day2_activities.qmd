@@ -9,6 +9,21 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+A. find the slope of f(x) = x\^2 at x = 3
+
+B. find the slope of P(a) = 2(3a + 2)\^4 - 5 at a = 1.2
+
 ```{r}
 
+#A
+
+fx <- expression(x^2)
+x <- 2
+D(fx, 'x')
+```
+
+```{r}
+pa <- expression(2 * ((3 * a + 2)^4) - 5)
+a <- 1.2
+D(pa, 'a')
 ```
