@@ -62,8 +62,9 @@ ggplot() +
                   shape = island)) +
   labs(title = "Penguin flipper length by species",
        x = "Species",
-       y = "Flipper length (mm)",
-       color = "Island") +
+       y = "Flipper length (mm)"
+    #   ,color = "Island"
+       ) +
 #  scale_shape_manual() +
   theme_minimal()
 ```
