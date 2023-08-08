@@ -27,3 +27,25 @@ pa <- expression(2 * ((3 * a + 2)^4) - 5)
 a <- 1.2
 D(pa, 'a')
 ```
+
+## Section 4
+
+```{r}
+ggplot() +
+  geom_point(data = penguins, 
+             aes(x = bill_length_mm, 
+                 y = bill_depth_mm,
+                 color = species)
+             )
+```
+
+```{r}
+ggplot() +
+  geom_jitter(data = penguins, 
+              aes(x = species,
+                  y = flipper_length_mm,
+                  color = species)) +
+  labs(title = "Penguin flipper length by species",
+       x = "Species",
+       y = "Flipper length (mm)")
+```
