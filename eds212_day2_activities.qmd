@@ -1,0 +1,14 @@
+---
+title: "eds212_day2_activities"
+---
+
+## Activities day 2!
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+
+```
