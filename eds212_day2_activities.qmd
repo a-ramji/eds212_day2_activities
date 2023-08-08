@@ -44,9 +44,26 @@ ggplot() +
   geom_jitter(data = penguins, 
               aes(x = species,
                   y = flipper_length_mm,
-                  color = species)) +
+                  color = island)) +
   labs(title = "Penguin flipper length by species",
        x = "Species",
        y = "Flipper length (mm)",
-       color = "Species")
+       color = "Island") +
+#  scale_shape_manual() +
+  theme_minimal()
+```
+
+```{r}
+ggplot() +
+  geom_jitter(data = penguins, 
+              aes(x = species,
+                  y = flipper_length_mm,
+                  color = island,
+                  shape = island)) +
+  labs(title = "Penguin flipper length by species",
+       x = "Species",
+       y = "Flipper length (mm)",
+       color = "Island") +
+#  scale_shape_manual() +
+  theme_minimal()
 ```
